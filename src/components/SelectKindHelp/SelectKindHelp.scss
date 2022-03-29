@@ -1,0 +1,63 @@
+@import '../../assets/styles/colors.scss';
+
+
+
+.block-select-kind-help {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+}
+
+
+
+.img-block {
+    padding: 10px;
+    border-radius: 15px;
+    border: 1px solid black;
+    cursor: pointer;
+    
+}
+
+.img-block:hover {
+    background-color: $PURPLE_COLOR;
+    transition: 0.3s;
+}
+
+.img-block:focus {
+    background-color: $PURPLE_COLOR;
+}
+
+.img-block img {
+    width: 40px;
+}
+
+.kind-help-z {
+    display: flex;
+}
+
+
+.text {
+    height: 66px;
+    text-align: left;
+    font-family: Geometria Bold;
+    padding-top: 20px;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+
+@media(max-width: 1140px) {
+
+    .section-kid-help {
+        margin-left: calc(50% - 393px / 2);
+    }
+    .block-select-kind-help {
+        display: inline;
+        
+    }
+    .kind-help-z {
+        margin-top: 20px;
+        margin-left: calc(50% - 260px / 2);
+    }
+}

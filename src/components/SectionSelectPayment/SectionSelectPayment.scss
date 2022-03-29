@@ -1,0 +1,127 @@
+@import "../../assets/styles/colors.scss";
+
+.container {
+    max-width: 100%;
+    height: 260px;
+    border: 1px solid $WHITE_BLUE_COLOR;
+    margin-top: 20px;
+    border-radius: 15px;
+    padding: 20px 20px 0 20px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.section-select-payment label {
+    font-family: Geometria Light;
+}
+
+.block-payment-metod img {
+    height: 40px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 15px;
+}
+
+.paymant-metod {
+    display: flex;
+}
+
+.metod {
+    text-align: center;
+    width: 170px;
+    height: 85px;
+    border-radius: 10px;
+    background-color: $WHITE_BLUE_COLOR;
+    font-family: Geometria Light;
+    color: $WHITE_COLOR;
+    font-size: 13px;
+    margin-top: 15px;
+    margin-right: 15px;
+    cursor: pointer;
+    border: 0;
+}
+
+.metod:hover {
+    background-color: $PURPLE_COLOR;
+    transition: 0.3s ;
+}
+
+.metod:focus {
+    background-color: $PURPLE_COLOR;
+    transition: background-color ;
+}
+
+.cart-data {
+    width: 200px;
+    height: 100px;
+    background-color: $WHITE_BLUE_COLOR;
+}
+
+.card {
+    height: 185px;
+    width: 350px;
+    background-color: $WHITE_BLUE_COLOR;
+    border-radius: 10px;
+    margin-top: 15px;
+    padding: 10px 20px 20px 20px;
+}
+
+.card:hover {
+    background-color: $PURPLE_COLOR;
+    transition: 0.3s;
+}
+
+.card label {
+    color: $WHITE_COLOR;
+    font-size: 14px;
+}
+
+.card-number label {
+    font-family: Geometria Light;
+}
+
+.number {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.number input[type=text] {
+    width: 70px;
+}
+
+.card-security {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-security input[type=text] {
+    width: 120px;
+}
+
+@media(max-width: 1140px) {
+    .container {
+        display: inline;
+        width: 800px;
+    }
+    .card-number {
+        margin-left: calc(50% - 350px / 2);
+    }
+    .section-select-payment {
+        padding-top: 30px;
+        padding-bottom: 20px;
+        margin-left: calc(50% - 350px / 2);
+        display: flex;
+    }
+    .paymant-metod {
+        display: inline;
+    }
+    .section-select-payment label {
+        position: absolute;
+        margin-top: -20px;
+    }
+}

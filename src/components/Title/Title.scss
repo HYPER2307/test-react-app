@@ -1,0 +1,34 @@
+@import "../../assets/styles/colors.scss";
+@import "../../assets/fonts/fonts.scss";
+
+.title {
+    padding-top: 30px;
+    width: 476px;
+    font-size: 50px;
+    text-align: center;
+    color: $TITLE_COLOR;
+    font-family: "Geometria ExtraBold";
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.title-desc{
+    padding-top: 10px;
+    width: 476px;
+    font-size: 17px;
+    text-align: center;
+    color: $TITLE_COLOR;
+    font-family: "Geometria Light";
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media(max-width:510px) {
+    .title {
+        font-size: 30px;
+        margin-left: calc(50% - 476px / 2);
+    }
+    .title-desc {
+        font-size: 13px;
+    }
+}

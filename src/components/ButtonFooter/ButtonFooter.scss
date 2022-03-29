@@ -1,0 +1,29 @@
+@import '../../assets/styles/colors.scss';
+
+.container-button {
+    margin-left: calc(50% - 300px / 2);
+}
+
+.button-footer {
+    text-align: center;
+    font-family: Geometria Bold;
+    color: $WHITE_COLOR;
+    line-height: 50px;
+    border-radius: 10px;
+    border: 0;
+    box-shadow: 0 0 10px 10px #f7215762;
+    width: 300px;
+    height: 50px;
+    background: linear-gradient(to right, $RED_COLOR, $PURPLE_COLOR);
+    cursor: pointer;
+}
+
+
+.button-footer:hover {
+    box-shadow: 0 0 10px 10px #f7215793;
+    transition: box-shadow 0.3s;
+}
+
+.button-footer:active {
+    background: linear-gradient(to right, #da1f4d, #7e5394);
+}
